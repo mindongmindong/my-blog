@@ -18,13 +18,13 @@ export default function Footer() {
             <h4 className="text-white text-md font-medium mb-4">Categories</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/posts/algorithm"
+                <Link href="/posts?category=algorithm"
                       className="text-gray-400 hover:text-blue-400 transition-colors">
                   Algorithm
                 </Link>
               </li>
               <li>
-                <Link href="/posts/cs"
+                <Link href="/posts?category=cs"
                       className="text-gray-400 hover:text-blue-400 transition-colors">
                   CS Knowledge
                 </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
             <h4 className="text-white text-md font-medium mb-4">Connect</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/your-username"
+                <a href="https://github.com/mindongmindong"
                    target="_blank"
                    rel="noopener noreferrer"
                    className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -51,7 +51,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:your-email@example.com"
+                <a href="mailto:dcmin123@ajou.ac.kr"
                    className="text-gray-400 hover:text-blue-400 transition-colors">
                   Email
                 </a>
@@ -63,7 +63,7 @@ export default function Footer() {
         {/* 저작권 */}
         <div className="border-t border-gray-800 mt-8 pt-6 text-center">
           <p className="text-gray-500 text-sm">
-            &copy; 2025 Dev Blog. All rights reserved.
+            &copy; 2025 My Blog. All rights reserved.
           </p>
         </div>
       </div>

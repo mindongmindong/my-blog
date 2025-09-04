@@ -47,7 +47,7 @@ export default async function PostPage({ params }: PostPageProps) {
       <nav className="mb-8 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
-            <Link href="/" className="hover:text-blue-600">Home</Link>
+            <Link href="/frontend/public" className="hover:text-blue-600">Home</Link>
           </li>
           <li>/</li>
           <li>
@@ -55,7 +55,7 @@ export default async function PostPage({ params }: PostPageProps) {
           </li>
           <li>/</li>
           <li>
-            <Link href={`/posts/${post.category}`} className="hover:text-blue-600">
+            <Link href={`/frontend/src/app/(main)/posts/${post.category}`} className="hover:text-blue-600">
               {categoryInfo?.label}
             </Link>
           </li>
@@ -177,7 +177,7 @@ export default async function PostPage({ params }: PostPageProps) {
       <div className="flex justify-between items-center mb-12 p-6 bg-gray-50 rounded-xl">
         <div className="flex-1">
           {postIdNumber > 1 && (
-            <Link href={`/posts/${postIdNumber - 1}`} className="group">
+            <Link href={`/frontend/src/app/(main)/posts/${postIdNumber - 1}`} className="group">
               <div className="flex items-center text-gray-600 hover:text-blue-600">
                 <svg className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -197,7 +197,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
         <div className="flex-1 text-right">
           {postIdNumber < dummyPosts.length && (
-            <Link href={`/posts/${postIdNumber + 1}`} className="group">
+            <Link href={`/frontend/src/app/(main)/posts/${postIdNumber + 1}`} className="group">
               <div className="flex items-center justify-end text-gray-600 hover:text-blue-600">
                 <div className="text-right">
                   <p className="text-sm">다음 글</p>
@@ -255,7 +255,7 @@ function RelatedPostCard({ post }: { post: any }) {
       </div>
 
       <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
-        <Link href={`/posts/${post.id}`} className="hover:text-blue-600 transition-colors">
+        <Link href={`/frontend/src/app/(main)/posts/${post.id}`} className="hover:text-blue-600 transition-colors">
           {post.title}
         </Link>
       </h3>
@@ -269,7 +269,7 @@ function RelatedPostCard({ post }: { post: any }) {
           {new Date(post.date).toLocaleDateString('ko-KR')}
         </time>
         <Link
-          href={`/posts/${post.id}`}
+          href={`/frontend/src/app/(main)/posts/${post.id}`}
           className="text-blue-600 hover:text-blue-700 font-medium"
         >
           읽어보기 →

@@ -33,7 +33,7 @@ export default function PostCard({ post }: { post: Post }) {
       </div>
 
       <h2 className="text-2xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
-        <Link href={`/posts/${post.id}`}>
+        <Link href={`/frontend/src/app/(main)/posts/${post.id}`}>
           {post.title}
         </Link>
       </h2>
@@ -55,7 +55,7 @@ export default function PostCard({ post }: { post: Post }) {
         </div>
 
         <Link
-          href={`/posts/${post.id}`}
+          href={`/frontend/src/app/(main)/posts/${post.id}`}
           className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group"
         >
           Read more

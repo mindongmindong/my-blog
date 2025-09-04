@@ -206,7 +206,7 @@ function PostCard({
       </div>
 
       <h2 className='text-2xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors'>
-        <Link href={`/posts/${post.id}`}>
+        <Link href={`/frontend/src/app/(main)/posts/${post.id}`}>
           {highlightSearchTerm(post.title, searchTerm)}
         </Link>
       </h2>
@@ -228,7 +228,7 @@ function PostCard({
         </div>
 
         <Link
-          href={`/posts/${post.id}`}
+          href={`/frontend/src/app/(main)/posts/${post.id}`}
           className='inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group'
         >
           자세히 보기
@@ -273,7 +273,7 @@ function SearchEmptyState({ searchTerm }: { searchTerm: string }) {
           모든 게시글 보기
         </Link>
         <Link
-          href='/posts/categories'
+          href='/frontend/src/app/(main)/posts/categories'
           className='px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors'
         >
           카테고리 둘러보기

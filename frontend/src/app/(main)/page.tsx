@@ -100,7 +100,7 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">
-                  <Link href={`/posts/${post.id}`} className="hover:text-blue-600 transition-colors">
+                  <Link href={`/frontend/src/app/(main)/posts/${post.id}`} className="hover:text-blue-600 transition-colors">
                     {post.title}
                   </Link>
                 </h3>
@@ -112,7 +112,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <time dateTime={post.date}>{post.date}</time>
                   <Link
-                    href={`/posts/${post.id}`}
+                    href={`/frontend/src/app/(main)/posts/${post.id}`}
                     className="text-blue-600 hover:text-blue-700 font-medium"
                   >
                     읽어보기 →

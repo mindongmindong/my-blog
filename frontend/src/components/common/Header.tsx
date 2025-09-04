@@ -8,13 +8,13 @@ export default function Header() {
           {/* 로고/블로그 제목 */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
-              Dev Blog
+              My Blog
             </Link>
           </div>
 
           {/* 네비게이션 메뉴 */}
           <nav className="hidden md:block">
-            <ul className="flex space-x-8">
+            <ul className="flex items-center space-x-8">
               <li>
                 <Link href="/" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
                   Home
@@ -28,6 +28,20 @@ export default function Header() {
               <li>
                 <Link href="/about" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
                   About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/posts/new"
+                  className="inline-flex items-center px-3 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
+                  aria-label="새 게시글 작성하기"
+                  prefetch
+                >
+                  {/* 펜 아이콘 */}
+                  <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.862 3.487a2.25 2.25 0 113.182 3.182L7.125 19.588a4.5 4.5 0 01-1.591 1.02l-3.06 1.02 1.02-3.06a4.5 4.5 0 011.02-1.591L16.862 3.487z" />
+                  </svg>
+                  글쓰기
                 </Link>
               </li>
             </ul>
